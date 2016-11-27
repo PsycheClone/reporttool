@@ -9,5 +9,3 @@ pip install termcolor --user
 pip install pyfiglet --user
 
 python setup.py install
-
-echo "alias reporttool=\"python `pwd`/mlx/reporttool.py\"" >> ~/.zshrc

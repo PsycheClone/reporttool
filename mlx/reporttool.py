@@ -194,7 +194,7 @@ def interupt_handler(signum, frame):
 
 if __name__ == '__main__':
     try:
-        signal.signal(signal.SIGINT, interupt_handler)
+        signal.signal(signal.SIGINT, interupt_handler)  # Handling interrupt signal of ctrl-c
         main()
     except KeyboardInterrupt:
         # quit

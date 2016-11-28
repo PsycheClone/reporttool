@@ -139,12 +139,12 @@ def ask_for_machine(username, password, site, machine_type):
         sys.stdout.flush()
         return input("> ")
     except (socket.gaierror):
-        cprint("Cannot connect.  Is your VPN on dummy?", 'red', attrs=['bold'])
+        cprint("Cannot connect.  Are you connected through the VPN tunnel?", 'red', attrs=['bold'])
         print
         print
         sys.exit(1)
     except (socket.error):
-        cprint("Connection timed out, probably something wrong with the server", 'red', attrs=['bold'])
+        cprint("Connection timed out, probably something wrong with the server.", 'red', attrs=['bold'])
         print
         print
         sys.exit(1)

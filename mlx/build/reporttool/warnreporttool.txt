@@ -1,36 +1,4 @@
 missing module named unicodedata.ucd_3_2_0 - imported by unicodedata, stringprep, encodings.idna
-missing module named _sre.MAXREPEAT - imported by _sre, sre_constants
-missing module named _warnings.warn_explicit - imported by _warnings, warnings
-missing module named _warnings.filters - imported by _warnings, warnings
-missing module named _warnings.once_registry - imported by _warnings, warnings
-missing module named _warnings.default_action - imported by _warnings, warnings
-missing module named _warnings.warn - imported by _warnings, warnings
-missing module named strop.whitespace - imported by strop, string
-missing module named strop.maketrans - imported by strop, string
-missing module named strop.lowercase - imported by strop, string
-missing module named strop.uppercase - imported by strop, string
-missing module named itertools.islice - imported by itertools, repr, heapq
-missing module named itertools.starmap - imported by itertools, collections
-missing module named itertools.repeat - imported by itertools, collections
-missing module named itertools.imap - imported by itertools, heapq, collections
-missing module named itertools.tee - imported by itertools, heapq
-missing module named itertools.izip - imported by itertools, heapq
-missing module named itertools.count - imported by itertools, heapq, threading
-missing module named itertools.chain - imported by itertools, tokenize, heapq, collections
-missing module named org.PyStringMap - imported by org, copy
-missing module named org - imported by copy
-missing module named exceptions.ReferenceError - imported by exceptions, weakref
-missing module named _weakref.ref - imported by _weakref, _weakrefset, weakref
-missing module named _weakref.ReferenceType - imported by _weakref, weakref
-missing module named _weakref.proxy - imported by _weakref, weakref
-missing module named _weakref.getweakrefs - imported by _weakref, weakref
-missing module named _weakref.getweakrefcount - imported by _weakref, weakref
-missing module named _weakref.CallableProxyType - imported by _weakref, weakref
-missing module named _weakref.ProxyType - imported by _weakref, weakref
-missing module named copy.deepcopy - imported by copy, weakref
-missing module named array.array - imported by array, httplib
-missing module named re._compile - imported by re, sre
-missing module named re.__all__ - imported by re, sre
 missing module named codecs.mbcs_encode - imported by codecs, encodings.mbcs
 missing module named codecs.mbcs_decode - imported by codecs, encodings.mbcs
 missing module named binascii.a2b_uu - imported by binascii, encodings.uu_codec
@@ -50,6 +18,11 @@ missing module named cStringIO.StringIO - imported by cStringIO, gettext, pprint
 missing module named struct.calcsize - imported by struct, ctypes
 missing module named _struct.__doc__ - imported by _struct, struct
 missing module named _struct._clearcache - imported by _struct, struct
+missing module named _warnings.warn_explicit - imported by _warnings, warnings
+missing module named _warnings.filters - imported by _warnings, warnings
+missing module named _warnings.once_registry - imported by _warnings, warnings
+missing module named _warnings.default_action - imported by _warnings, warnings
+missing module named _warnings.warn - imported by _warnings, warnings
 missing module named _functools.partial - imported by _functools, functools
 missing module named _functools.reduce - imported by _functools, functools
 missing module named _ctypes._wstring_at_addr - imported by _ctypes, ctypes
@@ -89,6 +62,33 @@ missing module named _ctypes._Pointer - imported by _ctypes, ctypes
 missing module named _ctypes.Structure - imported by _ctypes, ctypes
 missing module named _ctypes.Array - imported by _ctypes, ctypes
 missing module named _ctypes.Union - imported by _ctypes, ctypes
+missing module named _sre.MAXREPEAT - imported by _sre, sre_constants
+missing module named strop.whitespace - imported by strop, string
+missing module named strop.maketrans - imported by strop, string
+missing module named strop.lowercase - imported by strop, string
+missing module named strop.uppercase - imported by strop, string
+missing module named itertools.islice - imported by itertools, repr, heapq
+missing module named itertools.starmap - imported by itertools, collections
+missing module named itertools.repeat - imported by itertools, collections
+missing module named itertools.imap - imported by itertools, heapq, collections
+missing module named itertools.tee - imported by itertools, heapq
+missing module named itertools.izip - imported by itertools, heapq
+missing module named itertools.count - imported by itertools, heapq, threading
+missing module named itertools.chain - imported by itertools, tokenize, heapq, collections
+missing module named org.PyStringMap - imported by org, copy
+missing module named org - imported by copy
+missing module named exceptions.ReferenceError - imported by exceptions, weakref
+missing module named _weakref.ref - imported by _weakref, _weakrefset, weakref
+missing module named _weakref.ReferenceType - imported by _weakref, weakref
+missing module named _weakref.proxy - imported by _weakref, weakref
+missing module named _weakref.getweakrefs - imported by _weakref, weakref
+missing module named _weakref.getweakrefcount - imported by _weakref, weakref
+missing module named _weakref.CallableProxyType - imported by _weakref, weakref
+missing module named _weakref.ProxyType - imported by _weakref, weakref
+missing module named copy.deepcopy - imported by copy, weakref
+missing module named array.array - imported by array, httplib
+missing module named re._compile - imported by re, sre
+missing module named re.__all__ - imported by re, sre
 missing module named time.strptime - imported by time, ssl
 missing module named time.time - imported by time, threading
 missing module named time.sleep - imported by time, threading

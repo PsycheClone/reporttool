@@ -6,6 +6,7 @@ import signal
 import subprocess
 import socket
 import getpass
+import re
 from colorama import init
 from termcolor import cprint
 init(strip=not sys.stdout.isatty())  # strip colors if stdout is redirected
@@ -58,7 +59,8 @@ def download_single_machine(username, password, site, machine_type, machine, cle
         sys.stdout.write("\t")
     sys.stdout.flush()
 
-    stdin, stdout, stderr = client.exec_command("ls {}{} | grep '.*\.txt\|.*\.HTML'".format(machine_type, machine))
+    stdin, stdout, stderr = client.exec_command("ls {}{} | grep '.*\.txt\|.*\.HTML'"
+                                                .format(machine_type, str(machine).replace(" ", "\ ")))
     ls_output = stdout.read()
     files = ls_output.split("\n")
     del files[-1]
@@ -66,8 +68,9 @@ def download_single_machine(username, password, site, machine_type, machine, cle
     extension = ".txt" if "rasco" in machine_type else ".HTML"
 
     if len(files) > 0:
-        rsync_cmd = 'sshpass -p {} /usr/bin/rsync -va {}@esb-b-test.{}.elex.be:{}{}/*{} {}/'\
-                                 .format(password, username, site, machine_type, machine, extension, machine)
+        rsync_cmd = "sshpass -p {} /usr/bin/rsync -va {}@esb-b-test.{}.elex.be:\"{}{}/*{}\" {}/"\
+                                 .format(password, username, site, machine_type, str(machine).replace(" ", "\ "),
+                                         extension, str(machine).replace(" ", "\ "))
 
         rsync = subprocess.Popen([rsync_cmd], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         output = rsync.communicate()
@@ -165,6 +168,7 @@ def ask_for_sites():
     print_title()
     cprint("Available sites\n", 'green', attrs=['bold'])
     number = 1
+
     for site in sites:
         print str(number) + "/ " + site
         sys.stdout.flush()
